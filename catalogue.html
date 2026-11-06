@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Catalogue — Belle Flore</title>
+  <meta name="description" content="Rouges à lèvres, mascaras, fonds de teint et vernis Flormar. Prix en euros et en dirhams.">
+  <meta name="theme-color" content="#fbf6f3">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bandeau">Livraison offerte dès 40 € en France · dès 400 DH au Maroc</div>
+  <header class="entete">
+    <div class="conteneur">
+      <a class="logo" href="index.html">Belle Flore<span>Cosmétiques Flormar</span></a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html" aria-current="page">Catalogue</a>
+        <a href="panier.html">Panier</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="actions-entete">
+        <a class="lien-panier" href="panier.html" aria-label="Voir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="compteur" data-compteur-panier hidden>0</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="tete-page">
+      <div class="conteneur">
+        <p class="fil"><a href="index.html">Accueil</a> / Catalogue</p>
+        <h1>Le catalogue</h1>
+        <p>Toute la sélection Flormar, avec les prix pour la France (€) et le Maroc (DH).</p>
+      </div>
+    </section>
+
+    <section class="conteneur" style="padding-bottom:72px">
+      <div class="barre-outils">
+        <div class="filtres" id="filtres" role="group" aria-label="Filtrer par catégorie"></div>
+        <label class="tri"><span id="nb-produits"></span>
+          <select id="tri" aria-label="Trier les produits">
+            <option value="defaut">Trier : pertinence</option>
+            <option value="prix-croissant">Prix croissant</option>
+            <option value="prix-decroissant">Prix décroissant</option>
+            <option value="nom">Nom (A–Z)</option>
+          </select>
+        </label>
+      </div>
+      <div class="grille-produits" id="catalogue"></div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div class="pied__marque">
+          <a class="logo" href="index.html">Belle Flore<span>Cosmétiques Flormar</span></a>
+          <p style="margin-top:14px;max-width:320px">Revendeur de maquillage Flormar, livré en France et au Maroc.</p>
+        </div>
+        <div>
+          <h4>Boutique</h4>
+          <ul>
+            <li><a href="catalogue.html?categorie=L%C3%A8vres">Lèvres</a></li>
+            <li><a href="catalogue.html?categorie=Yeux">Yeux</a></li>
+            <li><a href="catalogue.html?categorie=Teint">Teint</a></li>
+            <li><a href="catalogue.html?categorie=Ongles">Ongles</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aide</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#faq">Livraison</a></li>
+            <li><a href="contact.html#faq">Paiement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous suivre</h4>
+          <ul>
+            <li><a href="#" data-whatsapp>WhatsApp</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pied__bas">
+        <span>© <span data-annee></span> Belle Flore. Tous droits réservés.</span>
+        <span>Flormar est une marque déposée de son propriétaire.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-flottant" href="#" data-whatsapp aria-label="Nous écrire sur WhatsApp"><span data-icone-whatsapp></span></a>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

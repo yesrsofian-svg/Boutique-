@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — Belle Flore</title>
+  <meta name="description" content="Contactez Belle Flore sur WhatsApp pour vos commandes Flormar en France et au Maroc.">
+  <meta name="theme-color" content="#fbf6f3">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bandeau">Livraison offerte dès 40 € en France · dès 400 DH au Maroc</div>
+  <header class="entete">
+    <div class="conteneur">
+      <a class="logo" href="index.html">Belle Flore<span>Cosmétiques Flormar</span></a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="panier.html">Panier</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="actions-entete">
+        <a class="lien-panier" href="panier.html" aria-label="Voir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="compteur" data-compteur-panier hidden>0</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="tete-page">
+      <div class="conteneur">
+        <p class="fil"><a href="index.html">Accueil</a> / Contact</p>
+        <h1>Contactez-nous</h1>
+        <p>Une question sur une teinte, une commande ou une livraison ? Nous sommes là pour vous, en France comme au Maroc.</p>
+      </div>
+    </section>
+
+    <section class="conteneur" style="padding-top:24px">
+      <div class="contact-grille">
+        <div>
+          <div class="carte carte--whatsapp">
+            <p class="surtitre" style="color:var(--whatsapp-fonce)">Le plus rapide</p>
+            <h2>Écrivez-nous sur WhatsApp</h2>
+            <p>Conseils teintes, suivi de commande, disponibilité : réponse en général en moins d'une heure.</p>
+            <a class="btn btn--whatsapp btn--bloc" href="#" data-whatsapp="Bonjour Belle Flore 🌸, j'ai une question :"><span data-icone-whatsapp></span> Discuter sur WhatsApp</a>
+            <ul class="liste-contact">
+              <li><span>🕘</span><span>Lun – Sam : 9h – 20h (heure de Paris et de Casablanca)</span></li>
+              <li><span>✉️</span><span><a href="#" data-email></a></span></li>
+              <li><span>📍</span><span>Expédition depuis la France et le Maroc</span></li>
+            </ul>
+          </div>
+
+          <div class="carte faq" id="faq" style="margin-top:24px">
+            <h2 style="font-size:1.5rem">Questions fréquentes</h2>
+            <details>
+              <summary>Quels sont les délais de livraison ?</summary>
+              <p>France : 2 à 4 jours ouvrés. Maroc : 24 à 72 h selon la ville (Casablanca, Rabat, Marrakech, Tanger…).</p>
+            </details>
+            <details>
+              <summary>Comment puis-je payer ?</summary>
+              <p>En France : carte bancaire ou virement. Au Maroc : paiement à la livraison ou virement. Nous confirmons tout avec vous sur WhatsApp.</p>
+            </details>
+            <details>
+              <summary>Les produits sont-ils authentiques ?</summary>
+              <p>Oui, tous nos produits sont des cosmétiques Flormar originaux, neufs et scellés.</p>
+            </details>
+            <details>
+              <summary>Puis-je retourner un produit ?</summary>
+              <p>Les produits non ouverts peuvent être retournés sous 14 jours. Pour des raisons d'hygiène, les produits ouverts ne sont ni repris ni échangés.</p>
+            </details>
+          </div>
+        </div>
+
+        <form class="carte" id="form-contact">
+          <h2 style="font-size:1.5rem">Envoyer un message</h2>
+          <p style="color:var(--gris);font-size:.9rem">Votre message s'ouvrira dans WhatsApp, prêt à être envoyé.</p>
+          <div class="champ">
+            <label for="nom">Prénom et nom</label>
+            <input id="nom" name="nom" autocomplete="name" required>
+          </div>
+          <div class="champ">
+            <label for="pays">Pays</label>
+            <select id="pays" name="pays">
+              <option>France</option>
+              <option>Maroc</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" required placeholder="Bonjour, je cherche une teinte de fond de teint pour peau mate…"></textarea>
+          </div>
+          <button class="btn btn--whatsapp btn--bloc" type="submit"><span data-icone-whatsapp></span> Envoyer via WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div class="pied__marque">
+          <a class="logo" href="index.html">Belle Flore<span>Cosmétiques Flormar</span></a>
+          <p style="margin-top:14px;max-width:320px">Revendeur de maquillage Flormar, livré en France et au Maroc.</p>
+        </div>
+        <div>
+          <h4>Boutique</h4>
+          <ul>
+            <li><a href="catalogue.html?categorie=L%C3%A8vres">Lèvres</a></li>
+            <li><a href="catalogue.html?categorie=Yeux">Yeux</a></li>
+            <li><a href="catalogue.html?categorie=Teint">Teint</a></li>
+            <li><a href="catalogue.html?categorie=Ongles">Ongles</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aide</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#faq">Livraison</a></li>
+            <li><a href="contact.html#faq">Paiement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nous suivre</h4>
+          <ul>
+            <li><a href="#" data-whatsapp>WhatsApp</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pied__bas">
+        <span>© <span data-annee></span> Belle Flore. Tous droits réservés.</span>
+        <span>Flormar est une marque déposée de son propriétaire.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-flottant" href="#" data-whatsapp aria-label="Nous écrire sur WhatsApp"><span data-icone-whatsapp></span></a>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
